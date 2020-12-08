@@ -43,10 +43,10 @@ btn.addEventListener(`change`, (e) => {
     color = getComputedStyle(html).getPropertyValue('--white-color');
     backgroundColor = getComputedStyle(html).getPropertyValue('--white-background-color');
   }
-  // html.style.setProperty('--color', color);
-  // html.style.setProperty('--background-color', backgroundColor);
-  body.style.setProperty(`color`, color);
-  body.style.setProperty(`background-color`, backgroundColor);
+  html.style.setProperty('--color', color);
+  html.style.setProperty('--background-color', backgroundColor);
+  // body.style.setProperty(`color`, color);
+  // body.style.setProperty(`background-color`, backgroundColor);
 });
 
 // btn.addEventListener(`change`, (e) => {
