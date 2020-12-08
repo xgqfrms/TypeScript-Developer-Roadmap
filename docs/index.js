@@ -37,22 +37,43 @@ btn.addEventListener(`change`, (e) => {
   let color = void(0);
   let backgroundColor = void(0);
   if(checked) {
-    color = getComputedStyle(html, ':root').getPropertyValue('--dark-color');
-    backgroundColor = getComputedStyle(html, ':root').getPropertyValue('--dark-background-color');
+    color = getComputedStyle(html).getPropertyValue('--dark-color');
+    backgroundColor = getComputedStyle(html).getPropertyValue('--dark-background-color');
   } else {
-    color = getComputedStyle(html, ':root').getPropertyValue('--white-color');
-    backgroundColor = getComputedStyle(html, ':root').getPropertyValue('--white-background-color');
+    color = getComputedStyle(html).getPropertyValue('--white-color');
+    backgroundColor = getComputedStyle(html).getPropertyValue('--white-background-color');
   }
-  // html.style.color = color;
-  // html.style.backgroundColor = backgroundColor;
-  // html.setAttribute(`style`, body.getAttribute(`style`) + `color: ${color}; background-color: ${backgroundColor};`);
-  body.style.color = color;
-  body.style.backgroundColor = backgroundColor;
-  body.setAttribute(`style`, body.getAttribute(`style`) + `color: ${color}; background-color: ${backgroundColor};`);
+  // html.style.setProperty('--color', color);
+  // html.style.setProperty('--background-color', backgroundColor);
+  body.style.setProperty(`color`, color);
+  body.style.setProperty(`background-color`, backgroundColor);
 });
 
-btn.addEventListener(`click`, (e) => {
-  log(`click =`, e.target);
-});
+// btn.addEventListener(`change`, (e) => {
+//   const {
+//     value,
+//     checked,
+//    } = e.target;
+//   // log(`e.target =`, e, e.target, value, checked);
+//   let color = void(0);
+//   let backgroundColor = void(0);
+//   if(checked) {
+//     color = getComputedStyle(html, ':root').getPropertyValue('--dark-color');
+//     backgroundColor = getComputedStyle(html, ':root').getPropertyValue('--dark-background-color');
+//   } else {
+//     color = getComputedStyle(html, ':root').getPropertyValue('--white-color');
+//     backgroundColor = getComputedStyle(html, ':root').getPropertyValue('--white-background-color');
+//   }
+//   // html.style.color = color;
+//   // html.style.backgroundColor = backgroundColor;
+//   // html.setAttribute(`style`, body.getAttribute(`style`) + `color: ${color}; background-color: ${backgroundColor};`);
+//   body.style.color = color;
+//   body.style.backgroundColor = backgroundColor;
+//   body.setAttribute(`style`, body.getAttribute(`style`) + `color: ${color}; background-color: ${backgroundColor};`);
+// });
+
+// btn.addEventListener(`click`, (e) => {
+//   log(`click =`, e.target);
+// });
 
 
