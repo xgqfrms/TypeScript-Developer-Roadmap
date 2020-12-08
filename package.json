@@ -1,0 +1,28 @@
+{
+  "name": "typescript-developer-roadmap",
+  "version": "1.0.0",
+  "description": "TypeScript Developer Roadmap",
+  "author": "xgqfrms",
+  "license": "MIT",
+  "keywords": [
+    "TypeScript",
+    "Developer",
+    "Roadmap"
+  ],
+  "main": "src/index.ts",  "scripts": {
+    "dev": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/TypeScript-Developer-Roadmap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xgqfrms/TypeScript-Developer-Roadmap/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/TypeScript-Developer-Roadmap#readme"
+}

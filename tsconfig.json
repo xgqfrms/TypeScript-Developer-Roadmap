@@ -10,7 +10,7 @@
     "sourceMap": true,
     "outDir": "./build",
     "rootDir": "./",
-    "removeComments": true,
+    "removeComments": false,
     "downlevelIteration": true,
     "isolatedModules": false,
     "strict": true,
